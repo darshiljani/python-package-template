@@ -7,7 +7,7 @@
   },
 
   "files.exclude": {
-    "**/.git": false,
+    "**/.git": true,
     "**/.DS_Store": true,
     "**/__pycache__": true,
     "**/*.pyc": true
@@ -29,7 +29,7 @@
   "todohighlight.isCaseSensitive": true,
   "todohighlight.keywords": [
     {
-      "text": "FIX",
+      "text": "FIXME",
       "color": "#333",
       "backgroundColor": "#DAA520"
     },
