@@ -1,0 +1,48 @@
+exclude = [
+    ".git",
+    ".venv",
+    "requirements",
+    ".vscode",
+    ".ruff_cache",
+    "server/**/migrations/**",
+]
+
+
+target-version = "py38"
+line-length = 88
+
+lint.select = [
+    "E", # Error codes (PEP8 violations)
+    "F", # Pyflakes rules (e.g., undefined variables)
+    "I", # Import conventions
+    "D", # Docstring conventions
+    "A", # Pyupgrade rules
+    "C", # Complexity checks
+]
+
+
+lint.ignore = [
+    "D100", # Missing docstring in public module
+    "D101", # Missing docstring in public class
+    "D102", # Missing docstring in public method
+    "D103", # Missing docstring in public function
+    "D104", # Missing docstring in public package
+    "D105", # Missing docstring in magic method
+    "D106", # Missing docstring in public nested class
+    "D107", # Missing docstring in __init__ method
+    "D203", # Incorrect blank line before class (Incompatible with D211)
+    "D213", # Mult-line summary second line (Incompatible with D212)
+    "F401", # Ignore unused imports
+    "F403", # Ignore star imports
+    "F405", # Ignore variable/function use via star imports
+    "E501", # Ignore line length issues
+]
+
+fix = true
+
+
+[format]
+quote-style = "double"
+
+[lint.per-file-ignores]
+"__init__.py" = ["E402"]
