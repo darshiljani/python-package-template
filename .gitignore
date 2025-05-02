@@ -68,9 +68,6 @@ dmypy.json
 # profiling data
 .prof
 
-# Do not ignore all files in src/pkg_name
-!src/pkg_name/**
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
