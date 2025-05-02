@@ -1,0 +1,11 @@
+[general]
+ignore=body
+
+[title-max-length]
+line-length=80
+
+[title-min-length]
+min-length=1
+
+[title-match-regex]
+regex=^(init|build|chore|dev|docs|deps|feat|fix|perf|refactor|revert|style|WIP): .+

@@ -17,7 +17,7 @@ authors = [{ name = "Darshil Jani", email = "darshiljani.dev@gmail.com" }]
 where = ["src"]
 
 [project.optional-dependencies]
-dev = ["mypy", "ruff", "pre-commit"]
+dev = ["mypy", "ruff", "pre-commit", "gitlint"]
 
 [project.scripts]
 pkg-test = "pkg_name.tests.runner:main"
